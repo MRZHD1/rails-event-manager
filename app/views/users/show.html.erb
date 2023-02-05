@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user %>
+
+<div>
+  <h2>Events Created:</h2>
+  <% @user.created_events.each do |event| %>
+    <%= render event %>
+  <% end %>
+</div>
